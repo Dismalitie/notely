@@ -1,0 +1,15 @@
+C:\Users\harry\source\repos\notely\notely\bin\Debug\notely.exe.config
+C:\Users\harry\source\repos\notely\notely\bin\Debug\notely.exe
+C:\Users\harry\source\repos\notely\notely\bin\Debug\notely.pdb
+C:\Users\harry\source\repos\notely\notely\obj\Debug\notely.csproj.AssemblyReference.cache
+C:\Users\harry\source\repos\notely\notely\obj\Debug\notely.csproj.SuggestedBindingRedirects.cache
+C:\Users\harry\source\repos\notely\notely\obj\Debug\notely.Form1.resources
+C:\Users\harry\source\repos\notely\notely\obj\Debug\notely.Properties.Resources.resources
+C:\Users\harry\source\repos\notely\notely\obj\Debug\notely.csproj.GenerateResource.cache
+C:\Users\harry\source\repos\notely\notely\obj\Debug\notely.csproj.CoreCompileInputs.cache
+C:\Users\harry\source\repos\notely\notely\obj\Debug\notely.exe
+C:\Users\harry\source\repos\notely\notely\obj\Debug\notely.pdb
+C:\Users\harry\source\repos\notely\notely\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\harry\source\repos\notely\notely\obj\Debug\notely.csproj.CopyComplete
+C:\Users\harry\source\repos\notely\notely\bin\Debug\Siticone.UI.dll
+C:\Users\harry\source\repos\notely\notely\obj\Debug\notely.Note.resources

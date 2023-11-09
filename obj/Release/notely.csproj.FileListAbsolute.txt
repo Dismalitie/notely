@@ -1,0 +1,14 @@
+C:\Users\harry\source\repos\notely\notely\bin\Release\notely.exe.config
+C:\Users\harry\source\repos\notely\notely\bin\Release\notely.exe
+C:\Users\harry\source\repos\notely\notely\bin\Release\notely.pdb
+C:\Users\harry\source\repos\notely\notely\bin\Release\Siticone.UI.dll
+C:\Users\harry\source\repos\notely\notely\obj\Release\notely.csproj.AssemblyReference.cache
+C:\Users\harry\source\repos\notely\notely\obj\Release\notely.csproj.SuggestedBindingRedirects.cache
+C:\Users\harry\source\repos\notely\notely\obj\Release\notely.Form1.resources
+C:\Users\harry\source\repos\notely\notely\obj\Release\notely.Note.resources
+C:\Users\harry\source\repos\notely\notely\obj\Release\notely.Properties.Resources.resources
+C:\Users\harry\source\repos\notely\notely\obj\Release\notely.csproj.GenerateResource.cache
+C:\Users\harry\source\repos\notely\notely\obj\Release\notely.csproj.CoreCompileInputs.cache
+C:\Users\harry\source\repos\notely\notely\obj\Release\notely.csproj.CopyComplete
+C:\Users\harry\source\repos\notely\notely\obj\Release\notely.exe
+C:\Users\harry\source\repos\notely\notely\obj\Release\notely.pdb
