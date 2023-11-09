@@ -36,12 +36,16 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.exit = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.nodrag = new System.Windows.Forms.Panel();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.update = new System.Windows.Forms.Timer(this.components);
             this.siticoneDragControl1 = new Siticone.UI.WinForms.SiticoneDragControl(this.components);
             this.siticoneDragControl2 = new Siticone.UI.WinForms.SiticoneDragControl(this.components);
+            this.siticoneElipse1 = new Siticone.UI.WinForms.SiticoneElipse(this.components);
+            this.fade_out = new System.Windows.Forms.Timer(this.components);
+            this.fade_in = new System.Windows.Forms.Timer(this.components);
+            this.opacity_fade_in = new System.Windows.Forms.Timer(this.components);
+            this.opacity_fade_out = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.visibility)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.min)).BeginInit();
@@ -119,11 +123,6 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 15;
-            this.bunifuElipse1.TargetControl = this;
-            // 
             // nodrag
             // 
             this.nodrag.Location = new System.Drawing.Point(174, 384);
@@ -157,6 +156,32 @@
             // 
             this.siticoneDragControl2.TargetControl = this.textBox1;
             // 
+            // siticoneElipse1
+            // 
+            this.siticoneElipse1.BorderRadius = 15;
+            this.siticoneElipse1.TargetControl = this;
+            // 
+            // fade_out
+            // 
+            this.fade_out.Interval = 30;
+            this.fade_out.Tick += new System.EventHandler(this.fade_out_Tick);
+            // 
+            // fade_in
+            // 
+            this.fade_in.Enabled = true;
+            this.fade_in.Interval = 30;
+            this.fade_in.Tick += new System.EventHandler(this.fade_in_Tick);
+            // 
+            // opacity_fade_in
+            // 
+            this.opacity_fade_in.Enabled = true;
+            this.opacity_fade_in.Interval = 200;
+            // 
+            // opacity_fade_out
+            // 
+            this.opacity_fade_out.Enabled = true;
+            this.opacity_fade_out.Interval = 200;
+            // 
             // Note
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -171,6 +196,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Note";
+            this.Opacity = 0D;
             this.Text = "Note";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Note_Load);
@@ -187,7 +213,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox exit;
         private System.Windows.Forms.Panel nodrag;
@@ -198,5 +223,10 @@
         private Siticone.UI.WinForms.SiticoneDragControl siticoneDragControl1;
         private Siticone.UI.WinForms.SiticoneDragControl siticoneDragControl2;
         private System.Windows.Forms.PictureBox visibility;
+        private Siticone.UI.WinForms.SiticoneElipse siticoneElipse1;
+        private System.Windows.Forms.Timer fade_out;
+        private System.Windows.Forms.Timer fade_in;
+        private System.Windows.Forms.Timer opacity_fade_in;
+        private System.Windows.Forms.Timer opacity_fade_out;
     }
 }
