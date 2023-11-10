@@ -33,6 +33,7 @@ namespace notely
 
         private void Note_Load(object sender, EventArgs e)
         {
+
             Random random = new Random();
             int randomNumber = random.Next(1, 5);
 
@@ -132,7 +133,7 @@ namespace notely
         {
             if (isvisible == true)
             {
-                if (Opacity != 0.4)
+                if (Opacity != Properties.Settings.Default.opacityPercentage)
                 {
                     Opacity = Opacity - 0.05;
                 }

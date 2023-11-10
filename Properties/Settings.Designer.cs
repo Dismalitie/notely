@@ -34,5 +34,17 @@ namespace notely.Properties {
                 this["firstLaunch"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0.7")]
+        public float opacityPercentage {
+            get {
+                return ((float)(this["opacityPercentage"]));
+            }
+            set {
+                this["opacityPercentage"] = value;
+            }
+        }
     }
 }

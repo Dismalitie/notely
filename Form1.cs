@@ -63,7 +63,7 @@ namespace notely
 
         private void exit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            fade_out.Enabled = true;
         }
 
         private void min_Click(object sender, EventArgs e)
@@ -75,6 +75,31 @@ namespace notely
         {
             Note note = new Note();
             note.Show();
+        }
+
+        private void fade_in_Tick(object sender, EventArgs e)
+        {
+            if (Opacity != 1)
+            {
+                Opacity = Opacity + 0.2;
+            }
+            else
+            {
+                fade_in.Enabled = false;
+            }
+        }
+
+        private void fade_out_Tick(object sender, EventArgs e)
+        {
+            if (Opacity != 0)
+            {
+                Opacity = Opacity - 0.2;
+            }
+            else
+            {
+                this.Hide();
+                Application.Exit();
+            }
         }
     }
 }

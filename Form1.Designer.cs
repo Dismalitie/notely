@@ -38,6 +38,8 @@
             this.exit = new System.Windows.Forms.PictureBox();
             this.ico = new System.Windows.Forms.PictureBox();
             this.siticoneElipse1 = new Siticone.UI.WinForms.SiticoneElipse(this.components);
+            this.fade_out = new System.Windows.Forms.Timer(this.components);
+            this.fade_in = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.min)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.plus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exit)).BeginInit();
@@ -117,6 +119,17 @@
             this.siticoneElipse1.BorderRadius = 16;
             this.siticoneElipse1.TargetControl = this;
             // 
+            // fade_out
+            // 
+            this.fade_out.Interval = 30;
+            this.fade_out.Tick += new System.EventHandler(this.fade_out_Tick);
+            // 
+            // fade_in
+            // 
+            this.fade_in.Enabled = true;
+            this.fade_in.Interval = 30;
+            this.fade_in.Tick += new System.EventHandler(this.fade_in_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -131,6 +144,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
+            this.Opacity = 0D;
             this.Text = "notely - toolbar";
             this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.min)).EndInit();
@@ -152,6 +166,8 @@
         private Siticone.UI.WinForms.SiticoneDragControl siticoneDragControl2;
         private System.Windows.Forms.Label label1;
         private Siticone.UI.WinForms.SiticoneElipse siticoneElipse1;
+        private System.Windows.Forms.Timer fade_out;
+        private System.Windows.Forms.Timer fade_in;
     }
 }
 
